@@ -1,3 +1,32 @@
+/* Hide bullet points for participants */
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0.5em 0;
+  padding: 0;
+  list-style: none;
+}
+.participant-item {
+  background: #f3f3f3;
+  border-radius: 16px;
+  padding: 0.2em 0.8em 0.2em 0.6em;
+  margin-right: 0.3em;
+  display: flex;
+  align-items: center;
+  font-size: 0.97em;
+  position: relative;
+}
+.delete-icon {
+  color: #c00;
+  cursor: pointer;
+  margin-left: 0.5em;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #f33;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +101,27 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-section ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.participants-section li {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.participants-section em {
+  color: #999;
+  font-style: italic;
 }
 
 .form-group {
